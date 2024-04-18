@@ -3,7 +3,7 @@ body {
   background-color: #f4f4f4;
   padding: 30px;
   color: #333;
-  background-image: url("./img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -36,6 +36,7 @@ button {
   background-color: #333974;
   color: #fff;
   padding: 5px 10px;
+  margin-right: 10px;
   border: none;
   border-radius: 3px;
   margin-left: 5px;
@@ -52,8 +53,7 @@ button:hover {
   padding-bottom: 1.5rem;
 }
 
-input[type="text"],
-select {
+input[type="text"], select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -69,4 +69,38 @@ button.complete {
 button.remove {
   background-color: #d9534f;
   color: #fff;
+}
+
+.todo-list {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #555;
+}
+
+.todo {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter,
+.search {
+  border-bottom: 1px solid #555;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-options div {
+  flex: 1 1 0;
 }
